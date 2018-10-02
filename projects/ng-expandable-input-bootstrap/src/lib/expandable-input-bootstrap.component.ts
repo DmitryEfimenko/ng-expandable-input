@@ -1,8 +1,10 @@
-import { Component, OnInit, Input, ViewChild, ContentChild, ElementRef } from '@angular/core';
-import { CdkExpandableInputComponent, ExpInputError } from 'ng-expandable-input';
+import { Component, ContentChild, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { CdkExpandableInputComponent, ExpInputError } from '@ng-expandable-input/cdk';
+
 import { ExpIconCloseBootstrapDirective } from './exp-icon-close-bootstrap.directive';
 import { ExpIconOpenBootstrapDirective } from './exp-icon-open-bootstrap.directive';
 import { ExpInputBootstrapDirective } from './exp-input-bootstrap.directive';
+
 
 @Component({
   selector: 'bts-expandable-input',

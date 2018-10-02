@@ -1,6 +1,7 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
+import { ExpandableInputModule } from '@ng-expandable-input/cdk';
+
 import { AppComponent } from './app.component';
-import { ExpandableInputModule } from 'ng-expandable-input';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {

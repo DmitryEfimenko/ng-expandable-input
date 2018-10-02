@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, ViewChild, ContentChild, ElementRef } from '@angular/core';
-import { CdkExpandableInputComponent, ExpInputError } from 'ng-expandable-input';
-import { MatFormFieldControl, MatFormField } from '@angular/material';
+import { Component, ContentChild, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { MatFormField, MatFormFieldControl } from '@angular/material';
+import { CdkExpandableInputComponent, ExpInputError } from '@ng-expandable-input/cdk';
+
 import { ExpIconCloseMaterialDirective } from './exp-icon-close-material.directive';
 import { ExpIconOpenMaterialDirective } from './exp-icon-open-material.directive';
 

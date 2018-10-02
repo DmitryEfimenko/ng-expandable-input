@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { CdkComponent } from './cdk/cdk.component';
+
 const routes: Routes = [
-  { path: '', loadChildren: './cdk/cdk.module#CdkModule', pathMatch: 'full' },
+  { path: '', component: CdkComponent, pathMatch: 'full' },
   { path: 'material', loadChildren: './material/material.module#MaterialModule' },
   { path: 'bootstrap', loadChildren: './bootstrap/bootstrap.module#BootstrapModule' },
   { path: '**', redirectTo: '' }

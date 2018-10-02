@@ -18,22 +18,22 @@
       "dom"
     ],
     "paths": {
-      "ng-expandable-input": [
+      "@ng-expandable-input/cdk": [
         "dist/ng-expandable-input"
       ],
-      "ng-expandable-input/*": [
+      "@ng-expandable-input/cdk/*": [
         "dist/ng-expandable-input/*"
       ],
-      "ng-expandable-input-material": [
+      "@ng-expandable-input/material": [
         "dist/ng-expandable-input-material"
       ],
-      "ng-expandable-input-material/*": [
+      "@ng-expandable-input/material/*": [
         "dist/ng-expandable-input-material/*"
       ],
-      "ng-expandable-input-bootstrap": [
+      "@ng-expandable-input/bootstrap": [
         "dist/ng-expandable-input-bootstrap"
       ],
-      "ng-expandable-input-bootstrap/*": [
+      "@ng-expandable-input/bootstrap/*": [
         "dist/ng-expandable-input-bootstrap/*"
       ]
     }

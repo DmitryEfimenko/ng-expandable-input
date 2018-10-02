@@ -3,7 +3,7 @@
 ## What is it?
 A component consisting of a trigger element (button/icon/anything else...) and an input which shows by sliding to the left when the button is clicked.
 
-Both, the trigger element and the input need to be supplied allowing a lot of flexibility. This library strives to make as little assumptions about styling as possible. It is then very simple to use this as a base for 
+Both, the trigger element and the input need to be supplied allowing a lot of flexibility. This library strives to make as little assumptions about styling as possible. It is then very simple to use this as a base for a styled component used in your app. You can see examples of such styled components: (1) [Material](https://dmitryefimenko.github.io/ng-expandable-input/material), (2) [Bootstrap](https://dmitryefimenko.github.io/ng-expandable-input/bootstrap)
 
 Optionally you can also pass an "action trigger" element, which is useful when you'd like the user to be able to submit the value via a button.
 
@@ -28,6 +28,9 @@ Code:
 Result:
 
 ![Result](https://i.imgur.com/9Giozh5.gif)
+
+## Demo:
+https://dmitryefimenko.github.io/ng-expandable-input/
 
 ## Usage
 1. Add module your your imports:

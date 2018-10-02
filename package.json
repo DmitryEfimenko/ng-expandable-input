@@ -16,7 +16,9 @@
     "build:cdk": "ng build ng-expandable-input",
     "build:mat": "ng build ng-expandable-input-material",
     "build:bts": "ng build ng-expandable-input-bootstrap",
-    "build:all": "npm run build:cdk && npm run build:mat && npm run build:bts"
+    "build:all": "npm run build:cdk && npm run build:mat && npm run build:bts",
+    "build:demo": "ng build --prod --base-href https://DmitryEfimenko.github.io/ng-expandable-input/",
+    "publish:demo": "npm run build:all && npm run build:demo && npx ngh --dir dist/demo"
   },
   "private": false,
   "dependencies": {
@@ -46,6 +48,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "~4.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",

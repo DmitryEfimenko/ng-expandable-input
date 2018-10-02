@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CdkRoutingModule } from './cdk-routing.module';
+import { ExpandableInputModule } from '@ng-expandable-input/cdk';
+
 import { SharedModule } from '../shared.module';
-import { ExpandableInputModule } from 'ng-expandable-input';
+import { CdkRoutingModule } from './cdk-routing.module';
 import { CdkComponent } from './cdk.component';
 
 

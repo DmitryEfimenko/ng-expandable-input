@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 import { CommonModule } from '@angular/common';
-import { MatCardModule } from '@angular/material';
+import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 
 @NgModule({
   exports: [

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { ExpandableInputMaterialModule } from 'ng-expandable-input-material';
-import { MatIconModule, MatInputModule, MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/material';
+import { ExpandableInputMaterialModule } from '@ng-expandable-input/material';
 
 import { SharedModule } from '../shared.module';
 import { MaterialRoutingModule } from './material-routing.module';
