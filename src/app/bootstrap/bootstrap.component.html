@@ -1,0 +1,48 @@
+
+<h2>Bootstrap</h2>
+<p>bts-* components use cdk-expandable-input as a base and expand on top of that using Bootstrap specification.</p>
+
+<div fxLayout fxLayoutGap="1em">
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>Without action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 220px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-bootstrap-no-action.html"
+        ></ngx-gist>
+      </div>
+
+      <bts-expandable-input>
+        <div class="form-group" btsExpInput>
+          <input type="text" class="form-control" />
+        </div>
+
+        <i btsExpIconOpen class="fas fa-search"></i>
+      </bts-expandable-input>
+    </mat-card>
+  </div>
+
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>With action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 240px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-bootstrap-with-action.html"
+        ></ngx-gist>
+      </div>
+
+      <bts-expandable-input>
+        <div class="form-group" btsExpInput>
+          <input type="text" class="form-control" />
+        </div>
+
+        <i btsExpIconOpen class="fas fa-plus-circle"></i>
+        <i btsExpIconAction class="fas fa-plus"></i>
+      </bts-expandable-input>
+    </mat-card>
+  </div>
+</div>

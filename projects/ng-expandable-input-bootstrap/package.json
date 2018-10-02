@@ -1,0 +1,21 @@
+{
+  "name": "@ng-expandable-input/bootstrap",
+  "version": "0.0.1",
+  "description": "Expandable input styled using Bootstrap",
+  "author": {
+    "name": "Dmitry Efimenko",
+    "email": "dmitrief@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryEfimenko/ng-expandable-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmitryEfimenko/ng-expandable-input/issues"
+  }
+}

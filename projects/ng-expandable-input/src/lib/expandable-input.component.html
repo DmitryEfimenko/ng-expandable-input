@@ -1,0 +1,38 @@
+<div class="wrap-all">
+  <span class="input-field" [style.height.px]="dims.cdkExpInput.h">
+    <span class="input-field_wrapper" [@slideInOut]="isOpen">
+      <ng-content select="[cdkExpInput]"></ng-content>
+    </span>
+  </span>
+
+  <span
+    class="icons"
+    [class.icons--active]="isOpen"
+    [style.height.px]="dims.icons.h"
+    [style.width.px]="dims.icons.w"
+  >
+    <span class="icons_icon-action"
+      *ngIf="iconAction"
+      [style.right.px]="dims.icons.w + actionOffset"
+      [style.visibility]="isOpen ? 'visible' : 'hidden'"
+      #iconActionWrapper
+    >
+      <ng-content select="[cdkExpIconAction]"></ng-content>
+    </span>
+
+    <span
+      class="icons_icon-close"
+      (click)="close()"
+      #iconCloseWrapper
+    >
+      <ng-content select="[cdkExpIconClose]"></ng-content>
+    </span>
+
+    <span
+      class="icons_icon-open"
+      (click)="open()"
+      #iconOpenWrapper>
+      <ng-content select="[cdkExpIconOpen]"></ng-content>
+    </span>
+  </span>
+</div>

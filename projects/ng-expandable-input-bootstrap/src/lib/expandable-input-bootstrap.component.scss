@@ -1,0 +1,16 @@
+/* Adjust appearance of material input */
+cdk-expandable-input {
+  background-color: white;
+
+  &/deep/ {
+    .input-field {
+      height: 44px !important;
+
+      [cdkExpInput] {
+        left: 3px;
+        top: 3px;
+        width: calc(100% - 8px);
+      }
+    }
+  }
+}

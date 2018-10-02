@@ -1,0 +1,45 @@
+<h2>CDK</h2>
+<p>cdk-* components do not assume any styles.
+  They can be used as is or as a starting point to create app-specific
+  components. Material and Bootstrap components are examples of such components.</p>
+
+<div fxLayout fxLayoutGap="1em">
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>Without action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 190px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-cdk-no-action.html"
+        ></ngx-gist>
+      </div>
+
+      <cdk-expandable-input>
+        <input type="text" cdkExpInput />
+        <i cdkExpIconOpen>🔍</i>
+        <i cdkExpIconClose>✖️</i>
+      </cdk-expandable-input>
+    </mat-card>
+  </div>
+
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>With action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 215px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-cdk-with-action.html"
+        ></ngx-gist>
+      </div>
+
+      <cdk-expandable-input>
+        <input type="text" cdkExpInput />
+        <i cdkExpIconOpen>🔍</i>
+        <i cdkExpIconAction>🔍</i>
+        <i cdkExpIconClose>✖️</i>
+      </cdk-expandable-input>
+    </mat-card>
+  </div>
+</div>

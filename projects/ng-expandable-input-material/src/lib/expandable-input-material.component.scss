@@ -1,0 +1,28 @@
+/* Adjust appearance of material input */
+cdk-expandable-input {
+  background-color: white;
+
+  &/deep/ {
+    .input-field {
+      height: 46px !important;
+    }
+
+    .mat-search_field {
+      height: 46px;
+    }
+      
+    [cdkexpinput] {
+      .mat-form-field-infix {
+        border-top: 0
+      }
+
+      .mat-form-field-flex {
+        border-radius: 4px 25px 25px 0;
+      }
+    }
+
+    .mat-form-field-underline {
+      width: calc(100% - 18px);
+    }
+  }
+}

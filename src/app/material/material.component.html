@@ -1,0 +1,50 @@
+<h2>Material</h2>
+<p>mat-* components use cdk-expandable-input as a base and expand on top of that using @angular/material components.</p>
+
+<div fxLayout fxLayoutGap="1em">
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>Without action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 250px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-material-no-action.html"
+        ></ngx-gist>
+      </div>
+
+      <mat-expandable-input>
+        <input type="text" matExpInput matInput />
+
+        <button matExpIconOpen mat-mini-fab type="button" color="accent">
+          <mat-icon matRipple>search</mat-icon>
+        </button>
+      </mat-expandable-input>
+    </mat-card>
+  </div>
+
+  <div class="wrap-card" fxFlex>
+    <mat-card>
+      <mat-card-header>With action button</mat-card-header>
+
+      <div class="wrap-gist">
+        <ngx-gist style="height: 340px"
+          gistId="DmitryEfimenko/f5c8541938eb3967907128b41fde6c56"
+          file="expandable-input-material-with-action.html"
+        ></ngx-gist>
+      </div>
+
+      <mat-expandable-input>
+        <input type="text" matExpInput matInput />
+
+        <button matExpIconOpen mat-mini-fab type="button" color="accent">
+          <mat-icon matRipple>add</mat-icon>
+        </button>
+
+        <button matExpIconAction mat-mini-fab type="button" color="accent">
+          <mat-icon matRipple>add</mat-icon>
+        </button>
+      </mat-expandable-input>
+    </mat-card>
+  </div>
+</div>
