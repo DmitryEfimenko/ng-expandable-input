@@ -10,6 +10,9 @@ The CDK package is a package that material and bootstrap packages build on top o
 ## Demo:
 https://dmitryefimenko.github.io/ng-expandable-input/
 
+## Playground
+[Stackblitz](https://stackblitz.com/github/DmitryEfimenko/ng-expandable-input?file=src%2Fapp%2Fcdk%2Fcdk.component.html)
+
 ## API:
 See README for [@ng-expandable-input/cdk](https://github.com/DmitryEfimenko/ng-expandable-input/tree/master/projects/ng-expandable-input#api)
 

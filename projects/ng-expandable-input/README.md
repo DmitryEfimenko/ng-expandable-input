@@ -32,6 +32,9 @@ Result:
 ## Demo:
 https://dmitryefimenko.github.io/ng-expandable-input/
 
+## Playground
+[Stackblitz](https://stackblitz.com/github/DmitryEfimenko/ng-expandable-input?file=src%2Fapp%2Fcdk%2Fcdk.component.html)
+
 ## Usage
 1. Add module your your imports:
 ```ts
