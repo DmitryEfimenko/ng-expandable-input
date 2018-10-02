@@ -1,6 +1,6 @@
 {
   "name": "@ng-expandable-input/material",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Expandable input styled using @angular/material",
   "author": {
     "name": "Dmitry Efimenko",

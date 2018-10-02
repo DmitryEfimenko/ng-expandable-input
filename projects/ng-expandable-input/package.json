@@ -1,6 +1,6 @@
 {
   "name": "@ng-expandable-input/cdk",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Expandable input without any styling",
   "author": {
     "name": "Dmitry Efimenko",

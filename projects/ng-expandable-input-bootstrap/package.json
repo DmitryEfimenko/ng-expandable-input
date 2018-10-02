@@ -1,6 +1,6 @@
 {
   "name": "@ng-expandable-input/bootstrap",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Expandable input styled using Bootstrap",
   "author": {
     "name": "Dmitry Efimenko",
