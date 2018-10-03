@@ -16,6 +16,18 @@ https://dmitryefimenko.github.io/ng-expandable-input/
 ## Playground
 [Stackblitz](https://stackblitz.com/github/DmitryEfimenko/ng-expandable-input?file=src%2Fapp%2Fcdk%2Fcdk.component.html)
 
+## Installation
+`npm i @ng-expandable-input/cdk`
+```ts
+import { ExpandableInputModule } from '@ng-expandable-input/cdk';
+
+@NgModule({
+  imports: [ExpandableInputModule]
+  // ...
+})
+export class AppModule {}
+```
+
 ## API:
 See README for [@ng-expandable-input/cdk](https://github.com/DmitryEfimenko/ng-expandable-input/tree/master/projects/ng-expandable-input#api)
 

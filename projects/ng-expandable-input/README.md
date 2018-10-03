@@ -35,6 +35,11 @@ https://dmitryefimenko.github.io/ng-expandable-input/
 ## Playground
 [Stackblitz](https://stackblitz.com/github/DmitryEfimenko/ng-expandable-input?file=src%2Fapp%2Fcdk%2Fcdk.component.html)
 
+## Installation
+* npm: `npm i @ng-expandable-input/cdk`
+* yarn: `yarn add @ng-expandable-input/cdk`
+ 
+
 ## Usage
 1. Add module your your imports:
 ```ts
