@@ -1,5 +1,8 @@
 # Expandable Input
 
+A component consisting of a trigger element (button/icon/anything else...) and an input which shows by sliding to the left when the button is clicked.
+Both, the trigger element and the input need to be supplied allowing a lot of flexibility.
+
 This repository consists of three main packages:
 * [@ng-expandable-input/cdk](https://github.com/DmitryEfimenko/ng-expandable-input/tree/master/projects/ng-expandable-input)
 * [@ng-expandable-input/material](https://github.com/DmitryEfimenko/ng-expandable-input/tree/master/projects/ng-expandable-input-material)
