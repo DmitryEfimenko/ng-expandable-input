@@ -18,7 +18,11 @@
     "build:bts": "ng build ng-expandable-input-bootstrap",
     "build:all": "npm run build:cdk && npm run build:mat && npm run build:bts",
     "build:demo": "ng build --prod --base-href https://DmitryEfimenko.github.io/ng-expandable-input/",
-    "publish:demo": "npm run build:all && npm run build:demo && npx ngh --dir dist/demo"
+    "publish:demo": "npm run build:all && npm run build:demo && npx ngh --dir dist/demo",
+    "publish:npm:cdk": "npm publish ./dist/ng-expandable-input",
+    "publish:npm:mat": "npm publish ./dist/ng-expandable-input-material",
+    "publish:npm:bts": "npm publish ./dist/ng-expandable-input-bootstrap",
+    "publish:npm": "npm run build:all && npm run publish:npm:cdk && npm run publish:npm:mat && npm run publish:npm:bts"
   },
   "private": false,
   "dependencies": {
