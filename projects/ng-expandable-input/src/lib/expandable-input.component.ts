@@ -99,7 +99,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
    *   <input cdkExpInput />
    * </cdk-expandable-input>
    */
-  @ContentChild(CdkExpInputDirective, { read: ElementRef })
+  @ContentChild(CdkExpInputDirective, { read: ElementRef, static: false })
   expandableInputRef: ElementRef;
   expandableInput: HTMLElement;
 
@@ -109,7 +109,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
    *   <i cdkExpIconOpen>search</i>
    * </cdk-expandable-input>
    */
-  @ContentChild(CdkExpIconOpenDirective, { read: ElementRef })
+  @ContentChild(CdkExpIconOpenDirective, { read: ElementRef, static: false })
   iconOpen: ElementRef;
 
   /**
@@ -118,7 +118,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
    *   <i cdkExpIconClose>close</i>
    * </cdk-expandable-input>
    */
-  @ContentChild(CdkExpIconCloseDirective, { read: ElementRef })
+  @ContentChild(CdkExpIconCloseDirective, { read: ElementRef, static: false })
   iconClose: ElementRef;
 
   /**
@@ -129,12 +129,12 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
    *   </button>
    * </cdk-expandable-input>
    */
-  @ContentChild(CdkExpIconActionDirective, { read: ElementRef })
+  @ContentChild(CdkExpIconActionDirective, { read: ElementRef, static: false })
   iconAction: ElementRef;
 
-  @ViewChild('iconOpenWrapper') iconOpenWrapper: ElementRef;
-  @ViewChild('iconCloseWrapper') iconCloseWrapper: ElementRef;
-  @ViewChild('iconActionWrapper') iconActionWrapper: ElementRef;
+  @ViewChild('iconOpenWrapper', { static: false }) iconOpenWrapper: ElementRef;
+  @ViewChild('iconCloseWrapper', { static: false }) iconCloseWrapper: ElementRef;
+  @ViewChild('iconActionWrapper', { static: false }) iconActionWrapper: ElementRef;
 
   @HostListener('document:keyup.escape')
   onEsc() {
@@ -145,7 +145,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
   keydown(ev: KeyboardEvent) {
     if (this.openOnKey !== undefined &&
       ev.key === this.openOnKey &&
-      (!this.isOpen || !this.isInputFocused())
+      (!this.isOpen && !this.isInputFocused())
     ) {
       ev.preventDefault();
       this.open();
@@ -278,10 +278,10 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
   }
 
   private isInputFocused() {
-    if (!this.inputHtmlEl || !this.document.activeElement) {
-      return false;
-    }
-    return this.inputHtmlEl === this.document.activeElement;
+    const el: HTMLElement = this.document.activeElement;
+    if (!el) { return false; }
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') { return true; }
+    return false;
   }
 
   private sanityCheck() {

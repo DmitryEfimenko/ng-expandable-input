@@ -1,7 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatIconModule, MatInputModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
 import { ExpandableInputModule } from '@ng-expandable-input/cdk';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 import { ExpIconCloseMaterialDirective } from './exp-icon-close-material.directive';
 import { ExpIconOpenMaterialDirective } from './exp-icon-open-material.directive';

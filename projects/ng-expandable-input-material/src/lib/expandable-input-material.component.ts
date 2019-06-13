@@ -1,7 +1,6 @@
-import { Component, ContentChild, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { MatFormField, MatFormFieldControl } from '@angular/material';
+import { Component, OnInit, Input, ViewChild, ContentChild, ElementRef } from '@angular/core';
 import { CdkExpandableInputComponent, ExpInputError } from '@ng-expandable-input/cdk';
-
+import { MatFormFieldControl, MatFormField } from '@angular/material/form-field';
 import { ExpIconCloseMaterialDirective } from './exp-icon-close-material.directive';
 import { ExpIconOpenMaterialDirective } from './exp-icon-open-material.directive';
 
@@ -19,13 +18,13 @@ export class ExpandableInputMaterialComponent implements OnInit {
 
   isOpen = false;
 
-  @ViewChild(CdkExpandableInputComponent) cdk: CdkExpandableInputComponent;
+  @ViewChild(CdkExpandableInputComponent, { static: false }) cdk: CdkExpandableInputComponent;
 
-  @ContentChild(MatFormFieldControl) _control: MatFormFieldControl<any>;
-  @ViewChild(MatFormField) _matFormField: MatFormField;
+  @ContentChild(MatFormFieldControl, { static: true }) _control: MatFormFieldControl<any>;
+  @ViewChild(MatFormField, { static: true }) _matFormField: MatFormField;
 
-  @ContentChild(ExpIconCloseMaterialDirective, { read: ElementRef }) iconClose: ElementRef;
-  @ContentChild(ExpIconOpenMaterialDirective, { read: ElementRef }) iconOpen: ElementRef;
+  @ContentChild(ExpIconCloseMaterialDirective, { read: ElementRef, static: true }) iconClose: ElementRef;
+  @ContentChild(ExpIconOpenMaterialDirective, { read: ElementRef, static: true }) iconOpen: ElementRef;
 
   ngOnInit() {
     this.sanityCheck();

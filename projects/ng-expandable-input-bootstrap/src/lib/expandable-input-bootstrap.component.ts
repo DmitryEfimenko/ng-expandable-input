@@ -20,11 +20,11 @@ export class ExpandableInputBootstrapComponent implements OnInit {
 
   isOpen = false;
 
-  @ViewChild(CdkExpandableInputComponent) cdk: CdkExpandableInputComponent;
+  @ViewChild(CdkExpandableInputComponent, { static: false }) cdk: CdkExpandableInputComponent;
 
-  @ContentChild(ExpInputBootstrapDirective, { read: ElementRef }) expandableInputRef: ElementRef;
-  @ContentChild(ExpIconCloseBootstrapDirective, { read: ElementRef }) iconClose: ElementRef;
-  @ContentChild(ExpIconOpenBootstrapDirective, { read: ElementRef }) iconOpen: ElementRef;
+  @ContentChild(ExpInputBootstrapDirective, { read: ElementRef, static: true }) expandableInputRef: ElementRef;
+  @ContentChild(ExpIconCloseBootstrapDirective, { read: ElementRef, static: true }) iconClose: ElementRef;
+  @ContentChild(ExpIconOpenBootstrapDirective, { read: ElementRef, static: true }) iconOpen: ElementRef;
 
   ngOnInit() {
     this.sanityCheck();

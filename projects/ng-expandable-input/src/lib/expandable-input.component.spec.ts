@@ -3,6 +3,7 @@ import { CdkExpandableInputComponent } from './expandable-input.component';
 import { ExpandableInputModule } from './expandable-input.module';
 import { Component, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @Component({
@@ -27,7 +28,7 @@ describe('ExpandableInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ExpandableInputModule],
+      imports: [ExpandableInputModule, BrowserAnimationsModule],
       declarations: [TestComponent]
     })
       .compileComponents();
@@ -48,9 +49,10 @@ describe('ExpandableInputComponent', () => {
   });
 
   it('should detect dimentions', () => {
-    expect(expInpInstance.dims.icons).toEqual({ w: 22, h: 17 });
-    expect(expInpInstance.dims.iconOpen).toEqual({ w: 22, h: 17 });
-    expect(expInpInstance.dims.iconClose).toEqual({ w: 22, h: 17 });
+    console.log(expInpInstance.dims.icons);
+    expect(expInpInstance.dims.icons).toEqual({ w: 22, h: 22 });
+    expect(expInpInstance.dims.iconOpen).toEqual({ w: 22, h: 22 });
+    expect(expInpInstance.dims.iconClose).toEqual({ w: 22, h: 22 });
     expect(expInpInstance.dims.cdkExpInput).toEqual({ w: 0, h: 21 });
   });
 });

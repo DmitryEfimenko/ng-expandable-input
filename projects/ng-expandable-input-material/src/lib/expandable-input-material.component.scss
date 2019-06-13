@@ -2,7 +2,7 @@
 cdk-expandable-input {
   background-color: white;
 
-  &/deep/ {
+  &::ng-deep {
     .input-field {
       height: 46px !important;
     }
