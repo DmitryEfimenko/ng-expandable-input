@@ -74,7 +74,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
   /**
    * When true, input looses focus if Esc is pressed
    */
-  @Input() blurInputOnEsc = false;
+  @Input() blurInputOnEsc = true;
 
   /**
    * When set to KeyboardEvent.key, input will expand when that key is pressed
@@ -145,7 +145,7 @@ export class CdkExpandableInputComponent implements OnInit, AfterViewInit, OnDes
   keydown(ev: KeyboardEvent) {
     if (this.openOnKey !== undefined &&
       ev.key === this.openOnKey &&
-      (!this.isOpen && !this.isInputFocused())
+      !this.isInputFocused()
     ) {
       ev.preventDefault();
       this.open();

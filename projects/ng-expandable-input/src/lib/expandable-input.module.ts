@@ -6,6 +6,7 @@ import { CdkExpIconOpenDirective } from './exp-icon-open.directive';
 import { CdkExpInputDirective } from './exp-input.directive';
 import { CdkExpandableInputComponent } from './expandable-input.component';
 import { InputsManagerService } from './inputs-manager.service';
+import { FocusableDirective } from './focusable.directive';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { InputsManagerService } from './inputs-manager.service';
     CdkExpInputDirective,
     CdkExpIconOpenDirective,
     CdkExpIconCloseDirective,
-    CdkExpIconActionDirective
+    CdkExpIconActionDirective,
+    FocusableDirective
   ],
   providers: [
     InputsManagerService

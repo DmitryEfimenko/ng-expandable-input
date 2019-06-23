@@ -1,6 +1,11 @@
 <div class="wrap-all">
   <span class="input-field" [style.height.px]="dims.cdkExpInput.h">
-    <span class="input-field_wrapper" [@slideInOut]="isOpen">
+    <span
+      class="input-field_wrapper"
+      [@slideInOut]="isOpen"
+      [focusable]="isOpen"
+      focusableSelector="input"
+    >
       <ng-content select="[cdkExpInput]"></ng-content>
     </span>
   </span>
@@ -16,6 +21,8 @@
       [style.right.px]="dims.icons.w + actionOffset"
       [style.visibility]="isOpen ? 'visible' : 'hidden'"
       #iconActionWrapper
+      [focusable]="isOpen"
+      focusableSelector="button"
     >
       <ng-content select="[cdkExpIconAction]"></ng-content>
     </span>
@@ -24,6 +31,8 @@
       class="icons_icon-close"
       (click)="close()"
       #iconCloseWrapper
+      [focusable]="isOpen"
+      focusableSelector="button"
     >
       <ng-content select="[cdkExpIconClose]"></ng-content>
     </span>
@@ -31,7 +40,10 @@
     <span
       class="icons_icon-open"
       (click)="open()"
-      #iconOpenWrapper>
+      #iconOpenWrapper
+      [focusable]="!isOpen"
+      focusableSelector="button"
+    >
       <ng-content select="[cdkExpIconOpen]"></ng-content>
     </span>
   </span>
