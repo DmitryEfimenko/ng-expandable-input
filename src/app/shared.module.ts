@@ -1,15 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
+import { MatCardModule } from '@angular/material/card';
+import { NgxGistModule } from './ngx-gist/ngx-gist.module';
 
 @NgModule({
-  exports: [
-    CommonModule,
-    FlexLayoutModule,
-    NgxGistModule,
-    MatCardModule
-  ]
+  exports: [CommonModule, FlexLayoutModule, NgxGistModule, MatCardModule],
+  imports: [NgxGistModule],
 })
-export class SharedModule { }
+export class SharedModule {}

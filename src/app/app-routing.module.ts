@@ -5,8 +5,8 @@ import { CdkComponent } from './cdk/cdk.component';
 
 const routes: Routes = [
   { path: '', component: CdkComponent, pathMatch: 'full' },
-  { path: 'material', loadChildren: './material/material.module#MaterialModule' },
-  { path: 'bootstrap', loadChildren: './bootstrap/bootstrap.module#BootstrapModule' },
+  { path: 'material', loadChildren: () => import('./material/material.module').then(m => m.MaterialModule) },
+  { path: 'bootstrap', loadChildren: () => import('./bootstrap/bootstrap.module').then(m => m.BootstrapModule) },
   { path: '**', redirectTo: '' }
 ];
 
